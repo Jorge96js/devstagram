@@ -12,9 +12,9 @@
 
         @vite('resources/css/app.css')
         @vite('resources/js/app.js')
-
-
-
+        
+        
+        @livewireStyles
     </head>
     <body class="bg-zinc-900 text-white">
 
@@ -22,7 +22,7 @@
 
             <div class="container mx-auto flex justify-between items-center">
 
-                <h1 class="text-3xl  text-green-500 font-black">DevStagran</h1>
+                <a href="{{ route('home') }}" class="text-3xl  text-green-500 font-black">DevStagran</a>
 
                 @auth
                 <nav class="flex gap-2 items-center">
@@ -67,5 +67,6 @@
             @endphp
         </footer>
 
+        @livewireScripts
     </body>    
 </html>
